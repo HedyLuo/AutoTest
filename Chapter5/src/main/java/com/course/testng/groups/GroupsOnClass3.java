@@ -3,7 +3,7 @@ package com.course.testng.groups;
 import org.testng.annotations.Test;
 
 @Test(groups = "tea")
-public class GroupOnClass3 {
+public class GroupsOnClass3 {
 
     @Test
     public void tea1(){

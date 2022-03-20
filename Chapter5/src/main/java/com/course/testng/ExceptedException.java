@@ -2,7 +2,7 @@ package com.course.testng;
 
 import org.testng.annotations.Test;
 
-public class ExpectedException {
+public class ExceptedException {
 
     /**
      * 什么时候会用到异常测试？？
