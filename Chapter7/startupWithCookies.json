@@ -1,0 +1,36 @@
+[
+  {
+    "description": "带cookie的get请求",
+    "request": {
+      "uri": "/getwithcookie",
+      "method": "get",
+      "queries": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "这是一个带cookie才能访问的get请求"
+    }
+  },
+  {
+    "description": "post请求",
+    "request": {
+      "uri": "/postwithpost",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "json": {
+      "name": "huhansan",
+      "age": "18"
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "huhansan": "success",
+        "status": 1
+      }
+    }
+  }
+]

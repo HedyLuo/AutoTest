@@ -1,0 +1,16 @@
+[
+  {
+    "description": "post请求",
+    "request": {
+      "uri": "/postdemo",
+      "method": "post",
+      "forms": {
+        "name": "hedy",
+        "sex": "women"
+      }
+    },
+    "response": {
+      "text": "这是一个带参数的post请求"
+    }
+  }
+]
