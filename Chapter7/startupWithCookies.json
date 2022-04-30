@@ -1,10 +1,24 @@
 [
   {
+    "description": "这个一个会返回cookies信息的get请求",
+    "request": {
+      "uri": "/getcookies",
+      "method": "get"
+    },
+    "response": {
+      "cookies": {
+        "login": "true"
+      },
+      "text": "获得cookies信息成功"
+    }
+
+  },
+  {
     "description": "带cookie的get请求",
     "request": {
-      "uri": "/getwithcookie",
+      "uri": "/get/with/cookie",
       "method": "get",
-      "queries": {
+      "cookies": {
         "login": "true"
       }
     },
@@ -19,11 +33,11 @@
       "method": "post",
       "cookies": {
         "login": "true"
+      },
+      "json": {
+        "name": "huhansan",
+        "age": "18"
       }
-    },
-    "json": {
-      "name": "huhansan",
-      "age": "18"
     },
     "response": {
       "status": 200,
