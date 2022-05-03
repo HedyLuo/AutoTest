@@ -2,7 +2,7 @@
   {
     "description": "这个一个会返回cookies信息的get请求",
     "request": {
-      "uri": "/getcookies",
+      "uri": "/getCookies",
       "method": "get"
     },
     "response": {
@@ -29,7 +29,7 @@
   {
     "description": "post请求",
     "request": {
-      "uri": "/postwithpost",
+      "uri": "/post/with/cookies",
       "method": "post",
       "cookies": {
         "login": "true"
