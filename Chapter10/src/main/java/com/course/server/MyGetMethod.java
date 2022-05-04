@@ -1,5 +1,7 @@
 package com.course.server;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
@@ -15,9 +17,11 @@ import java.util.Objects;
  * @Description:
  */
 @RestController
+@Api(value = "/",description = "这是我全部的get方法")
 public class MyGetMethod {
 
     @RequestMapping(value="/getCookies",method= RequestMethod.GET)
+    @ApiOperation(value = "通过这个方法可以获取到cookie值",httpMethod = "GET")
     public String getCookies(HttpServletResponse response){
 
         //HttpServletRequest 装请求信息的类
@@ -30,6 +34,7 @@ public class MyGetMethod {
     * 要求客户端携带cookies才能访问的get请求
     * */
     @RequestMapping(value = "/get/with/cookies",method = RequestMethod.GET)
+    @ApiOperation(value = "要求客户端携带cookies才能访问的get请求",httpMethod = "GET")
     public String getWithCookies(HttpServletRequest request){
         Cookie[] cookies = request.getCookies();
         if(Objects.isNull(cookies)){
