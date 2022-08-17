@@ -20,6 +20,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableSwagger2
 @EnableOpenApi
+//http://127.0.0.1:8889/swagger-ui/index.html#/
 public class SwaggerConfig {
 
     @Bean

@@ -34,7 +34,9 @@ public class MyPostMethod {
         return "用户名或密码错误";
 
     }
+    //HttpServletRequest request 请求对象
     @RequestMapping(value="getUserList",method = RequestMethod.POST)
+    //@RequestMapping简写@GetMapping
     @ApiOperation(value ="获取用户列表",httpMethod = "POSt")
     public String getUserLise(HttpServletRequest request,
                             @RequestBody User u){

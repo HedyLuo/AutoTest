@@ -12,7 +12,9 @@ public class HashMapStu {
         for (Integer i : map.keySet()){
             System.out.println("key:"+ i +","+"value:"+ map.get(i));//获取key对应的value
         }
-        //检查key的映射关系
+        //返回key对应的value,如果找不到则返回-1
+        System.out.println(map.getOrDefault(1,-1));
+        //查找key
         if(map.containsKey(1)){
             System.out.println("在hashmap中存在key为1的映射关系");
         }
